@@ -4,9 +4,14 @@ from sqlalchemy import engine_from_config, pool
 
 from alembic import context
 
-# Internal API modules: config.py and database.py in src/
+# Internal API modules: config.py in src/
 from src.config import settings
+
+# Internal API modules: SQLAlchemy Base model reference
 from src.database import Base
+
+# Internal API modules: list relevant models for table creation
+from src.users.models import User
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
