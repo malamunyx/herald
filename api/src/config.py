@@ -2,7 +2,8 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    database_url: str
+    DATABASE_URL: str
+    API_PREFIX: str = "/api"
 
     class Config:
         env_file = ".env"
