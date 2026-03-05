@@ -17,6 +17,7 @@ from src.users.models import User
 # access to the values within the .ini file in use.
 config = context.config
 
+# overrides .ini alembic .ini setting entry, allowing config.py reference
 config.set_main_option("sqlalchemy.url", settings.DATABASE_URL)
 
 # Interpret the config file for Python logging.
