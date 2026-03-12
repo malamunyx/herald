@@ -10,8 +10,5 @@ class Settings(BaseSettings):
 
     api_prefix: str = "/api"
 
-    class Config:
-        env_file = ".env"
-
 
 settings = Settings()  # type: ignore
